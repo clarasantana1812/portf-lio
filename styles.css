@@ -1,0 +1,95 @@
+body {
+    background-color:#875179;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+color: white;
+margin: 0;
+padding: 20px;   
+}
+
+
+h1 {
+    text-align: center;
+    color: #7966e3;
+    text-shadow: 2px 2px 5px #000000;
+    margin-bottom: 30px;
+}
+
+
+nav {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+nav a {
+    color: rgb(213, 216, 15);
+    text-decoration:none;
+    margin: 0 10px;
+    padding: 10px 10 px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background-color: white; 
+    color: #680e0e;
+}
+    
+    
+    .container {
+        display: flex; 
+        justify-content: space-between;
+        align-items: flex-start; 
+        gap: 20px; 
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    
+    
+    .lado-esquerdo {
+        width: 35%;
+    }
+    
+    .foto {
+        width: 150px;
+        border-radius: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .lado-direito ul {
+        list-style: disc;
+        color: #2b82ff;
+        padding-left: 20px;
+        border: 2px solid white; 
+        border-radius: 5px; 
+        padding: 10px; 
+        margin-bottom: 20px;
+}
+
+.programas {
+    list-style-position: inside;
+    color: #f3ab11; 
+    font-size: 18px;
+}
+
+
+.lado-direito {
+    width: 60%;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    color: #09b9ff;
+    border: 2px solid white;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .lado-esquerdo, .lado-direito {
+        width: 100%;
+    }
+}
